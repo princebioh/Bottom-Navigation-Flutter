@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BottomNavDefaults {
-  static final Color itemColor = Colors.blueGrey!;
+  static const Color itemColor = Colors.blueGrey;
   static final Color itemSelectedColor = Colors.blue[700]!;
 
   static final navItems = [

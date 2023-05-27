@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'widgets/bottom_navigation.dart';
+
+
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,22 +12,28 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
 }
 
+var indexClicked = 1;
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
+ 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Bottom Navigation APP"),
+        title: const Text("Bottom Navigation App"),
       ),
       
+      bottomNavigationBar: const BottomNavigation(),
     );
   }
 }
+

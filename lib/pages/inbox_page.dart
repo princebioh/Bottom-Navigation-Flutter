@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class InboxPage extends StatelessWidget {
   const InboxPage({super.key});
 
@@ -13,6 +14,7 @@ class InboxPage extends StatelessWidget {
       body: const Center(
         child: Text("This is Inbox Page"),
       ),
+      
     );
   }
 }
